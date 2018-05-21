@@ -1,0 +1,23 @@
+{
+  "name": "makersbnb",
+  "version": "1.0.0",
+  "description": "This application is a clone of AirBnB using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellie-keen/makersBnb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ellie-keen/makersBnb/issues"
+  },
+  "homepage": "https://github.com/ellie-keen/makersBnb#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
