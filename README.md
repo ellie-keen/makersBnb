@@ -1,45 +1,73 @@
 #### MakersBNB
 
-Hi
+
+
+#### Installation
+
+To run this application you will need Node.js installed on your machine. Now you can clone and install the relevant dependencies.
+
+```
+git clone https://github.com/ellie-keen/makersBnb.git
+npm install
+```
+
+To run the application locally run the following script
+
+```
+npm start
+```
+
+And visit: [http://localhost:3000/](http://localhost:3000/)
+
+
 
 #### User Stories
 
 ```
-As a user so i can list a space
+As a user so I can list a space
 I want to be able to sign up
 
 So users can book my space
 I want to be able to list my space
 
-As a user so i can hire out more than one space
+As a user so I can hire out more than one space
 I would like list more than one space
 
-As a user so i can differentiate my spaces
+As a user so I can differentiate my spaces
 I would like to be able to name my spaces
 
-As a user so i can describe my spaces
+As a user so I can describe my spaces
 i would like to be able to write a description
 
-As a user so i can give my spaces a price
+As a user so I can give my spaces a price
 i would like to be able to add a price per night
 
-As a user so i can review my spaces
+As a user so I can review my spaces
 I would like to be able to see my listings
 
-So i can let other users know when my spaces are available
+So I can let other users know when my spaces are available
 I would like to be able to input the dates
 
-As a user so i can browse another users space
+As a user so I can browse another users space
 I would like to be able to view all listings
 
-As a user so i can hire another users space
+As a user so I can hire another users space
 I want to be able to make a booking request
 
-As a user so that i can approve a request
+As a user so that I can approve a request
 I want to be able to review the requests made by other users
+
+As a user so that the availability of listings are accurate I would like the availability to be updated when a request has been accepted
 
 As a user when i approve a request
 The space should become unavailable at those dates for other users
 
 As a user until I approve a request
 I want to be able to receive more requests for the same dates
+
+As a user so that my space cannot be double booked
+other users should not be able to submit booking requests for unavailable dates
+
+As a user when I reject a booking request I want my listing to continue to be available
+
+```
