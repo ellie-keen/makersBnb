@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "node node_modules/jasmine/bin/jasmine.js"
+    "test": "node node_modules/jasmine/bin/jasmine.js",
+    "feature-tests": "node app.js | nightwatch"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,10 @@
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.37.8"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.38.3",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.12.0"
   }
 }
