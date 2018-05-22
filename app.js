@@ -1,5 +1,12 @@
 var express = require('express');
 var app = express();
+var spacesDB = require('./server/models').spaces;
+// spacesDB.findAll( {}
+// ).then(function(spaces){
+//   spaces.forEach(function(space){
+//     console.log(space)
+//   })
+// })
 
 app.get('/', function(req, res){
   res.send('Hello, MakersBnB!');
