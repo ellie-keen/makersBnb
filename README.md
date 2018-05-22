@@ -19,6 +19,14 @@ npm start
 
 And visit: [http://localhost:3000/](http://localhost:3000/)
 
+To run the Nightwatch feature tests, you will first need to install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html). This is because Nightwatch uses Selenium, which is a Java application.
+
+To run feature tests use:
+
+```
+npm run feature-tests
+```
+
 
 
 #### User Stories
