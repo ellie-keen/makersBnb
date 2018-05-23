@@ -1,4 +1,5 @@
 describe('database', function() {
+  var Database = require('../../lib/jasmine_examples/Database.js');
   var database
   beforeEach(function () {
      database = new Database();
@@ -9,7 +10,8 @@ describe('database', function() {
   });
 
   it('adds a hash to the array', function(){
-    database.pull
+    database.pull()
+    console.log(database.collection)
     expect(database.collection.length).toEqual(1)
   });
 
