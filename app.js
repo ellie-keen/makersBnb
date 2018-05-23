@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 var spacesDB = require('./server/models').spaces;
+// var title;
+//
 // spacesDB.findAll( {}
 // ).then(function(spaces){
 //   spaces.forEach(function(space){
-//     console.log(space)
+//   title = space.get('title'))
 //   })
 // })
 
