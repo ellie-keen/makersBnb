@@ -27,6 +27,27 @@ To run feature tests use:
 npm run feature-tests
 ```
 
+#### Installation of database
+
+We are using postgres and sequelize as our ORM. Run the following in your terminal to get started
+
+```
+npm install -g sequelize-cli
+```
+
+You will need to also create the database yourself in psql by running the following commands in your terminal
+
+```
+psql
+CREATE DATABASE makersbnb;
+\q
+```
+
+You will then need to migrate to create the tables,
+```
+cd server
+sequelize db:migrate
+```
 
 
 #### User Stories
