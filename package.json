@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/ellie-keen/makersBnb#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "jasmine": "^3.1.0",
+    "latest-version": "^3.1.0",
+    "path": "^0.12.7",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.37.8"

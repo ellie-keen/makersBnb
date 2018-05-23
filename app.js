@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var spacesDB = require('./server/models').spaces;
+
+app.set('view engine', 'ejs');
 // var title;
 //
 // spacesDB.findAll( {}
@@ -11,7 +13,11 @@ var spacesDB = require('./server/models').spaces;
 // })
 
 app.get('/', function(req, res){
-  res.send('Hello, MakersBnB!');
+  res.render('index');
+});
+
+app.get('/listings', function(req, res){
+  res.render('listings');
 });
 
 app.listen(3000, function(){
