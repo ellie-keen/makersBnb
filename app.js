@@ -10,6 +10,8 @@ var spacesDB = require('./server/models').spaces;
 //   })
 // })
 
+// spacesDB.create({ title: 'ellie space', description: 'very nice', nightPrice: '4'})
+
 app.get('/', function(req, res){
   res.send('Hello, MakersBnB!');
 });
