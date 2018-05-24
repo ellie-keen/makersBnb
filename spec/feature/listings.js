@@ -5,6 +5,7 @@ module.exports = {
     .waitForElementVisible('body', 2000)
     .assert.containsText('body', 'MakersBnB Listings!')
     .assert.containsText('body', 'Ellie\'s space')
+    .assert.containsText('body', 'Charly\'s space')
     .end()
   }
 }

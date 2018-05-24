@@ -26,8 +26,8 @@ app.get('/', function(req, res){
 });
 
 app.get('/listings/view', function(req, res){
-  var title = collection
-  res.render('listings', {title});
+  var spaces = collection
+  res.render('listings', {spaces});
 });
 
 app.get('/listings/add', function(req, res){
