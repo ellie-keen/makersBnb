@@ -19,6 +19,7 @@ spacesDB.findAll( {}
   })
 })
 
+
 //Express session
 app.use(session({
  secret: 'secret',
@@ -30,12 +31,14 @@ app.use(session({
 app.use(flash());
 
 
+
 app.get('/', function(req, res){
   res.render('index');
 });
 
 app.get('/listings/view', function(req, res){
-  res.render('listings');
+  var spaces = collection
+  res.render('listings', {spaces});
 });
 
 app.get('/listings/add', function(req, res){
