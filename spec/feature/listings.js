@@ -6,6 +6,7 @@ module.exports = {
     .assert.containsText('body', 'MakersBnB Listings!')
     .assert.containsText('body', 'Ellie\'s space')
     .assert.containsText('body', 'Charly\'s space')
+    .assert.containsText('body', 'A small hole in the ground')
     .end()
   }
 }

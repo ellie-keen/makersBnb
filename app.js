@@ -16,7 +16,6 @@ spacesDB.findAll( {}
   collection.push({id: space.get('id'), title: space.get('title'), description: space.get('description'), nightPrice: space.get('nightPrice')})
   })
 })
-
 // create method for form if needed
 //
 
