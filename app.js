@@ -1,4 +1,6 @@
 var express = require('express');
+var session = require('express-session');
+var flash = require('connect-flash');
 var app = express();
 var spacesDB = require('./server/models').spaces;
 var bodyParser = require('body-parser')
@@ -17,8 +19,15 @@ spacesDB.findAll( {}
   })
 })
 
-// create method for form if needed
-//
+//Express session
+app.use(session({
+ secret: 'secret',
+ saveUninitialized: true,
+ resave: true
+}));
+
+//Connect flash
+app.use(flash());
 
 
 app.get('/', function(req, res){
@@ -30,11 +39,12 @@ app.get('/listings/view', function(req, res){
 });
 
 app.get('/listings/add', function(req, res){
-  res.render('addlisting');
+  res.render('addlisting', {flash: {add: req.flash('add')}});
 });
 
 app.post('/listings/add', function(req, res){
   spacesDB.create({ title: req.body.title, description: req.body.description, nightPrice: req.body.price})
+  req.flash('add', 'Listing added!')
   res.redirect('/listings/add')
 });
 
