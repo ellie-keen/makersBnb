@@ -19,8 +19,16 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/listings', function(req, res){
+app.get('/listings/view', function(req, res){
   res.render('listings');
+});
+
+app.get('listings/add', function(req, res){
+  res.render('addlisting');
+});
+
+app.post('listings/add', function(req, res){
+  res.redirect('listings/add')
 });
 
 app.listen(3000, function(){
