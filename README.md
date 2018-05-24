@@ -9,6 +9,8 @@ To run this application you will need Node.js installed on your machine. Now you
 ```
 git clone https://github.com/ellie-keen/makersBnb.git
 npm install
+npm install nightwatch --save-dev
+npm install selenium-server chromedriver --save-dev
 ```
 
 To run the application locally run the following script
