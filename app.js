@@ -1,6 +1,12 @@
 var express = require('express');
 var app = express();
 var spacesDB = require('./server/models').spaces;
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
+
 var collection = [];
 app.set('view engine', 'ejs');
 // adds all spaces in the collection variable
@@ -12,7 +18,7 @@ spacesDB.findAll( {}
 })
 
 // create method for form if needed
-// spacesDB.create({ title: 'ellie space', description: 'very nice', nightPrice: '4'})
+//
 
 
 app.get('/', function(req, res){
@@ -23,12 +29,13 @@ app.get('/listings/view', function(req, res){
   res.render('listings');
 });
 
-app.get('listings/add', function(req, res){
+app.get('/listings/add', function(req, res){
   res.render('addlisting');
 });
 
-app.post('listings/add', function(req, res){
-  res.redirect('listings/add')
+app.post('/listings/add', function(req, res){
+  spacesDB.create({ title: req.body.title, description: req.body.description, nightPrice: req.body.price})
+  res.redirect('/listings/add')
 });
 
 app.listen(3000, function(){
