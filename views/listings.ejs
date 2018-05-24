@@ -1,1 +1,18 @@
 <h1> MakersBnB Listings! </h1>
+
+<% spaces.forEach(function(space) { %>
+  <li>
+    SPACEY
+    <br>
+   Title: <%= space.title %>
+   <br>
+   Description: <%= space.description %>
+   <br>
+   Price per Night: £<%= space.nightPrice %>
+   <br>
+ </li>
+ <% }) %>
+
+ <form action='/' method='get'>
+   <input type='submit' value='Return Home' id='returnHome'>
+ </form>

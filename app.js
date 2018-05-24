@@ -16,7 +16,6 @@ spacesDB.findAll( {}
   collection.push({id: space.get('id'), title: space.get('title'), description: space.get('description'), nightPrice: space.get('nightPrice')})
   })
 })
-
 // create method for form if needed
 //
 
@@ -26,7 +25,8 @@ app.get('/', function(req, res){
 });
 
 app.get('/listings/view', function(req, res){
-  res.render('listings');
+  var spaces = collection
+  res.render('listings', {spaces});
 });
 
 app.get('/listings/add', function(req, res){
