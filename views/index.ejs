@@ -8,7 +8,7 @@
 <style>
 #myfont{
   font-size: 70px;
-  color: rgb(77, 0, 0);
+  color: white;
   font-family: ‘Cormorant+Garamond’, sans-serif;
   text-align: center;
   padding-top: 10%;
@@ -16,7 +16,7 @@
 
 #myfont2{
   font-size: 10px;
-  color: rgb(77, 0, 0);
+  color: white;
   font-family: ‘Cormorant+Garamond’, sans-serif;
   text-align: center;
   padding-top: 10%;
@@ -37,6 +37,21 @@ background: url("https://media.giphy.com/media/La4sAOzY9H8L6/giphy.gif")
   background-position: center;
 }
 
+.button {
+  background: url("http://bestanimations.com/images/light-gold-glitter-bg-2.gif");
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-position: center;
+  border-radius: 50%;
+}
+
 body {
   background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg")
 
@@ -49,15 +64,15 @@ body {
     <h1 id="myfont"> BaconBnB </h1>
   </div>
 
-  <div id="mydiv2">
+  <div class="buttons">
   <h2 id="myfont2">
   <form action='/listings/view' method='get'>
-    <input type='submit' value='view listings' id='viewListings'>
+    <input type='submit' value='view listings' id='viewListings' class="button">
   </form>
 
 
   <form action='/listings/add' method='get'>
-    <input type='submit' value='add listings' id='addListings'>
+    <input type='submit' value='add listings' id='addListings' class="button">
   </form>
 </h2>
 </div>

@@ -1,18 +1,78 @@
-<h1> MakersBnB Listings! </h1>
+<html>
+<head>
+ <title>
 
-<% spaces.forEach(function(space) { %>
-  <li>
-    SPACEY
-    <br>
-   Title: <%= space.title %>
-   <br>
-   Description: <%= space.description %>
-   <br>
-   Price per Night: £<%= space.nightPrice %>
-   <br>
- </li>
- <% }) %>
 
- <form action='/' method='get'>
-   <input type='submit' value='Return Home' id='returnHome'>
- </form>
+ </title>
+ <link href=“https://fonts.googleapis.com/css?family=Meera+Inimai” rel=“stylesheet”>
+</head>
+<style>
+
+#font3{
+ font-size: 40px;
+ font-family: ‘Meera Inimai’, sans-serif;
+ text-align: center;
+ display: inline;
+ left:700px;
+ /* background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg"); */
+}
+
+body {
+  background: url("http://bestanimations.com/images/light-gold-glitter-bg-2.gif");
+  color: white;
+
+}
+
+.button {
+  background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg");
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.list {
+  background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg");
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  background-position: center;
+}
+
+</style>
+
+<body>
+  <div>
+    <h1 id="font3"> MakersBnB Listings! </h1>
+  </div>
+
+  <div>
+  <% spaces.forEach(function(space) { %>
+    <li class="list">
+      SPACEY
+      <br>
+     Title: <%= space.title %>
+     <br>
+     Description: <%= space.description %>
+     <br>
+     Price per Night: £<%= space.nightPrice %>
+     <br>
+   </li>
+   <% }) %>
+ </div>
+
+ <div>
+   <form action='/' method='get'>
+     <input type='submit' value='Return Home' id='returnHome' class="button">
+   </form>
+ </div>
+
+</body>
+</html>
