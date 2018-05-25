@@ -36,6 +36,8 @@ body {
   cursor: pointer;
   background-position: center;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .list {
@@ -43,7 +45,10 @@ body {
   width: 200px;
   height: 100px;
   margin: auto;
+  margin-top: 10px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 </style>
@@ -56,7 +61,7 @@ body {
   <div>
   <% spaces.forEach(function(space) { %>
     <li class="list">
-      SPACEY
+      Fancy a rasher?
       <br>
      Title: <%= space.title %>
      <br>

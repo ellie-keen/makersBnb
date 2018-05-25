@@ -7,7 +7,7 @@ module.exports = {
       .waitForElementVisible('#addListings', 5000)
       .click('#addListings')
       .pause(1000)
-      .assert.containsText('body', 'Add a listing')
+      .assert.containsText('body', 'Add a Rasher')
       .end()
   }
 }
