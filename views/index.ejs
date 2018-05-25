@@ -14,12 +14,27 @@
   padding-top: 10%;
 }
 
+#myfont2{
+  font-size: 10px;
+  color: rgb(77, 0, 0);
+  font-family: ‘Cormorant+Garamond’, sans-serif;
+  text-align: center;
+  padding-top: 10%;
+}
+
 #mydiv {
 width: 500px;
 height: 281px;
 margin: auto;
 background-position: center;
 background: url("https://media.giphy.com/media/La4sAOzY9H8L6/giphy.gif")
+}
+
+#mydiv2 {
+  width: 40px;
+  height: 30px;
+  margin: auto;
+  background-position: center;
 }
 
 body {
@@ -34,7 +49,8 @@ body {
     <h1 id="myfont"> BaconBnB </h1>
   </div>
 
-  <h2>
+  <div id="mydiv2">
+  <h2 id="myfont2">
   <form action='/listings/view' method='get'>
     <input type='submit' value='view listings' id='viewListings'>
   </form>
@@ -44,6 +60,7 @@ body {
     <input type='submit' value='add listings' id='addListings'>
   </form>
 </h2>
+</div>
 
 
 </div>
