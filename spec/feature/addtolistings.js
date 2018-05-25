@@ -10,7 +10,7 @@ module.exports = {
       .assert.containsText('body', 'Add a Rasher')
       .click('#toListings')
       .pause(1000)
-      .assert.containsText('body', 'MakersBnB Listings!')
+      .assert.containsText('body', 'GET A LOAD OF THAT BACON')
       .end()
   }
 }
