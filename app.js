@@ -12,12 +12,12 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var collection = [];
 app.set('view engine', 'ejs');
 // adds all spaces in the collection variable
-spacesDB.findAll( {}
+async function  refresh(){ await spacesDB.findAll( {}
 ).then(function(spaces){
   spaces.forEach(function(space){
   collection.push({id: space.get('id'), title: space.get('title'), description: space.get('description'), nightPrice: space.get('nightPrice')})
   })
-})
+})}
 
 
 //Express session
@@ -36,8 +36,9 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/listings/view', function(req, res){
-  var spaces = collection
+app.get('/listings/view', async function(req, res){
+  await refresh();
+  var spaces = collection;
   res.render('listings', {spaces});
 });
 
