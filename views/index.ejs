@@ -3,14 +3,38 @@
   <title>
 
   </title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 </head>
 <style>
+#myfont{
+  font-size: 70px;
+  color: rgb(77, 0, 0);
+  font-family: ‘Cormorant+Garamond’, sans-serif;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#mydiv {
+width: 500px;
+height: 281px;
+margin: auto;
+background-position: center;
+background: url("https://media.giphy.com/media/La4sAOzY9H8L6/giphy.gif")
+}
+
+body {
+  background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg")
+
+}
 </style>
 
 <body>
 
-  <h1> Hello, MakersBnB! </h1>
+  <div id="mydiv">
+    <h1 id="myfont"> BaconBnB </h1>
+  </div>
 
+  <h2>
   <form action='/listings/view' method='get'>
     <input type='submit' value='view listings' id='viewListings'>
   </form>
@@ -19,6 +43,9 @@
   <form action='/listings/add' method='get'>
     <input type='submit' value='add listings' id='addListings'>
   </form>
+</h2>
 
+
+</div>
 </body>
 </html>

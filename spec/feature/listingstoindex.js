@@ -7,7 +7,7 @@ module.exports = {
     .waitForElementVisible('#returnHome', 5000)
     .click('#returnHome')
     .pause(1000)
-    .assert.containsText('body', 'Hello, MakersBnB!')
+    .assert.containsText('body', 'BaconBnB')
     .end()
   }
 }
