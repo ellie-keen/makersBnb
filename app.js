@@ -48,7 +48,7 @@ app.get('/listings/add', function(req, res){
 
 app.post('/listings/add', function(req, res){
   spacesDB.create({ title: req.body.title, description: req.body.description, nightPrice: req.body.price})
-  req.flash('add', 'Listing added!')
+  req.flash('add', 'Rasher added!')
   res.redirect('/listings/add')
 });
 

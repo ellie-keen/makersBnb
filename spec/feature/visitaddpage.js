@@ -3,11 +3,11 @@ module.exports = {
     client
       .url("http://localhost:3000/")
       .waitForElementVisible('body', 2000)
-      .assert.containsText('body', 'Hello, MakersBnB!')
+      .assert.containsText('body', 'BaconBnB')
       .waitForElementVisible('#addListings', 5000)
       .click('#addListings')
       .pause(1000)
-      .assert.containsText('body', 'Add a listing')
+      .assert.containsText('body', 'Add a Rasher')
       .end()
   }
 }

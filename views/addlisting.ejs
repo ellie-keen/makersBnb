@@ -1,20 +1,50 @@
-<h1> Add a listing </h1>
+<html>
+<head>
+  <title>
+
+  </title>
+</head>
+<style>
+
+  body {
+    color: white;
+    background: url("http://backgrounds-desktop.com/uploads/posts/2017-09/1_bacon.jpg")
+  }
+
+  .button {
+    background: url("http://bestanimations.com/images/light-gold-glitter-bg-2.gif");
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+</style>
+
+
+<h1> Add a Rasher </h1>
 
 <form action="/listings/add" method="post">
     <label for="title">Title:</label> <input type="text" name="title" id="title">
     <label for="title">Description:</label> <input type="text" name="description" id="description">
     <label for="title">Price:</label> <input type="text" name="price" id="price">
-    <input type='submit' value='add listing' id='submit'>
+    <input type='submit' value='Add a Rasher' id='submit' class="button">
 </form>
 
 
 <h2><%= flash.add %></h2>
 
 <form action='/' method='get'>
-  <input type='submit' value='Return Home' id='backHome'>
+  <input type='submit' value='Back Bacon' id='backHome' class="button">
 </form>
 
 <form action='/listings/view' method='get'>
-  <input type='submit' value='View Listings' id='toListings'>
+  <input type='submit' value='View Rashers' id='toListings' class="button">
 </form>
-
